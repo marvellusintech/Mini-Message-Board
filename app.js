@@ -12,10 +12,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/", messageRouter);
 
-const PORT = 3000;
+const PORT = 8000;
 
 app.listen(PORT, () => {
-  console.log("Server running on port 3000");
+  console.log("Server running on port 8000");
 });
 
 app.use((err, req, res, next) => {
